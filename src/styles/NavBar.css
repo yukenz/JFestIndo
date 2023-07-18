@@ -1,0 +1,29 @@
+:root {
+  --primary-color: #5e3dc4;
+  --primary-hover: #9d8fc8;
+}
+
+.NavBar {
+  @apply flex bg-[var(--primary-color)] h-[50px] mt-6
+  justify-around items-center;
+}
+
+.NavBar .logo {
+  @apply font-extrabold text-[20px] text-white;
+}
+
+.NavBar > .menu {
+  @apply h-[100%]
+  overflow-hidden
+  flex items-center;
+}
+
+.NavBar > .menu > .a {
+  @apply p-5
+  text-white text-[14px]
+  hover:bg-[var(--primary-hover)];
+}
+
+.NavBar > .menu > .a.active {
+  @apply bg-[var(--primary-hover)];
+}
