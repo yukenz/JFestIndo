@@ -1,0 +1,76 @@
+:root {
+  --primary-color: #5e3dc4;
+  --primary-hover: #9d8fc8;
+}
+
+/* main#hero * {
+  @apply border-black border;
+} */
+
+main#hero p {
+  @apply font-poppins;
+}
+
+main#hero {
+  @apply flex 
+  max-w-[65%] m-auto
+  flex-col
+  mt-20
+  justify-center
+  sm:justify-evenly
+  sm:flex-row;
+}
+main#hero {
+  @apply flex justify-evenly
+  max-w-[65%] m-auto
+  mt-20;
+}
+
+main#hero > * {
+  @apply flex-[1];
+}
+
+.content-hero > .greeting {
+  @apply text-[#FA00FF] text-[16pt] font-normal;
+}
+
+.content-hero > .main-word {
+  @apply text-[20px] font-normal text-left w-[60%];
+}
+.content-hero > .description {
+  @apply text-[20px] font-normal mt-5 text-left w-[100%] xl:w-[80%];
+}
+
+.image-hero {
+  @apply hidden
+  md:flex md:justify-end md:items-center;
+}
+
+.main-word > h2 {
+  @apply font-extrabold text-[48px] text-[var(--primary-color)];
+}
+
+.content-hero > .sign-in {
+  @apply mt-10 text-[20px] flex flex-wrap justify-start;
+}
+
+.content-hero > .sign-in > p {
+  @apply text-[var(--primary-color)] font-semibold w-[100%];
+}
+
+.content-hero > .sign-in > a {
+  @apply text-[var(--primary-color)] font-extrabold
+  border border-[var(--primary-color)] rounded-lg
+  ml-0 m-2 p-2
+  text-center;
+  transition: all 0.5s;
+}
+
+.content-hero > .sign-in > a:nth-child(3) {
+  @apply text-[16px] align-middle pt-3;
+}
+
+.content-hero > .sign-in > a:hover {
+  @apply text-white bg-[var(--primary-color)];
+  transition: all 0.5s;
+}

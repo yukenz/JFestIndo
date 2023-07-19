@@ -4,12 +4,21 @@
 }
 
 .NavBar {
-  @apply flex bg-[var(--primary-color)] h-[50px] mt-6
-  justify-around items-center;
+  @apply flex bg-[var(--primary-color)]  mt-6
+  justify-around items-center
+  /* mobile */
+  flex-col
+  /* large */
+  md:flex-row;
 }
 
 .NavBar .logo {
-  @apply font-extrabold text-[20px] text-white;
+  @apply font-extrabold text-[20px] text-white
+  /* mobile */
+  mt-5
+  /* large */
+  md:mt-0
+  /* */;
 }
 
 .NavBar > .menu {
@@ -18,12 +27,12 @@
   flex items-center;
 }
 
-.NavBar > .menu > .a {
+.NavBar > .menu > a {
   @apply p-5
   text-white text-[14px]
   hover:bg-[var(--primary-hover)];
 }
 
-.NavBar > .menu > .a.active {
+.NavBar > .menu > a.active {
   @apply bg-[var(--primary-hover)];
 }
