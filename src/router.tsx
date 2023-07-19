@@ -6,10 +6,10 @@ import RootLayout from './layouts/RootLayout'
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <RootLayout/>,
-        children : [{
+        element: <RootLayout><h1>Index</h1></RootLayout>,
+        children: [{
             path: "event",
-            element : <EventPage/>
+            element: <EventPage />
         }]
 
     }
