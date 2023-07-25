@@ -1,0 +1,137 @@
+:root {
+  --primary-color: #5e3dc4;
+  --primary-hover: #9d8fc8;
+}
+
+.page-name {
+  @apply font-poppins font-bold text-[40px] text-[var(--primary-color)] block text-center;
+}
+
+.event-container {
+  @apply m-auto text-white
+  /* Laptop */
+  max-w-[80%]
+  /* Desktop */
+  xl:max-w-[70%];
+}
+
+.event-container .event {
+  @apply flex
+  justify-start
+  bg-[var(--primary-color)]
+  shadow-xl h-[100%];
+}
+
+.event-image {
+  overflow: hidden;
+  @apply w-[500px] h-auto
+  bg-white;
+}
+
+.event-image img {
+  transition: all 0.5s;
+  @apply w-full h-full;
+}
+.event-image img:hover {
+  transition: all 0.5s;
+  @apply scale-[1.2];
+}
+
+.event-desc {
+  @apply flex w-full
+
+  flex-col
+  justify-between
+  px-5 py-3
+  
+  xl:py-0
+  xl:justify-around
+  xl:flex-row;
+}
+
+.event-desc > div {
+  @apply /* laptop */
+    my-1
+  /* Desktop */
+  xl:my-4;
+}
+
+.desc-left {
+  @apply flex flex-col justify-between;
+}
+
+.eo p {
+  @apply text-[15px];
+}
+
+.desc-time {
+  @apply flex;
+}
+
+.desc-time > * > * {
+  @apply inline align-middle;
+}
+
+.location > * {
+  @apply inline align-middle;
+}
+
+.desc-main > h2 {
+  @apply font-bold 
+  /* Laptop */
+  text-[20px]
+  /* Desktop */
+  xl:text-[40px];
+}
+.desc-main > h3 {
+  @apply font-semibold text-[16px];
+}
+.desc-main > p {
+  @apply font-extralight text-[12px]
+  /* Laptop */
+  my-1
+  /* Desktop */
+  xl:m-0;
+}
+
+/* Guest Star */
+.desc-right {
+  @apply flex
+  flex-row justify-between items-center
+  flex-wrap gap-2
+  lg:flex-nowrap lg:gap-0
+  xl:flex-col xl:items-end;
+}
+
+.desc-right .guest-star {
+  @apply /* Desktop */
+  xl:w-[100%];
+}
+
+.guest-star > ul {
+  @apply flex justify-between;
+}
+
+.guest-star > ul > li {
+  @apply bg-white rounded-full p-1 w-8 h-8 text-center leading-8;
+}
+
+.visit-ctr {
+  @apply order-1 xl:order-[0];
+}
+
+.visit-btn {
+  @apply bg-white font-bold text-[var(--primary-color)]
+  rounded-md xl:rounded-xl
+  px-3 py-0
+  lg:px-6 lg:py-1.5;
+  transition: all 0.5s;
+}
+.visit-btn:hover {
+  @apply bg-[var(--primary-color)] text-white border;
+  transition: all 0, 5s;
+}
+
+.visitor p {
+  @apply font-normal text-[12px];
+}
