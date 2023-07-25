@@ -113,7 +113,10 @@
 }
 
 .guest-star > ul > li {
-  @apply bg-white rounded-full p-1 w-8 h-8 text-center leading-8;
+  @apply bg-white rounded-full
+  p-1 w-8 h-8
+  m-1 xl:m-0
+  text-center leading-8;
 }
 
 .visit-ctr {
